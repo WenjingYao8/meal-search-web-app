@@ -1,0 +1,62 @@
+* {
+  font-family: 'Poppins', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  body {
+    .container {
+      min-height: 100vh;
+      .meal-wrapper{
+          max-width: 1280px;
+          margin: 0 auto;
+          padding: 2rem;
+          background: #fff;
+          text-align: center;
+      }
+    }
+  }
+}
+
+$dark-orange: #dd5522;
+$very-dark-orange:#a74507;
+$white:rgb(255, 255, 255);
+
+.notFound {
+  grid-template-columns: 1fr!important;
+  color: $dark-orange;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.hidden {
+  display: none;
+}
+
+@import "meal-search";
+@import "meal-result";
+@import "meal-details";
+
+@media screen and (max-width: 992px) {
+  .meal-result{
+    #meals {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .meal-result {
+    #meals {
+      grid-template-columns: 1fr;
+    }
+  }
+  .meal-details {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 560px){
+  .meal-search {
+    .meal-search-box{
+          width: 100%;
+    }
+  }
+}
