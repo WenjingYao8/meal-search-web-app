@@ -3,6 +3,7 @@ const mealList = document.querySelector('#meals');
 const mealDetailsContent = document.querySelector('.meal-details-content');
 const recipeCloseBtn = document.querySelector('.recipe-close-btn');
 
+
 searchBtn.addEventListener('click', showMealList);
 mealList.addEventListener('click',getRecipe);
 recipeCloseBtn.addEventListener('click', closeRecipe);
